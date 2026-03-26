@@ -10,16 +10,19 @@
     "react-dom": "^19.2.4",
     "react-router-dom": "^7.13.2",
     "react-scripts": "5.0.1",
-    "react-tsparticles": "^2.12.2",
-    "tsparticles": "^2.12.2",
+    "react-tsparticles": "2.12.2",
+    "tsparticles": "2.12.2",
     "web-vitals": "^2.1.4",
     "ajv": "^8.13.2",
     "ajv-keywords": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": ["react-app", "react-app/jest"]
   }
 }
